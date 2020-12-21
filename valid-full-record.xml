@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="schema.xsd">
+    <contact>
+        <firstname>John</firstname>
+        <lastname>Doe</lastname>
+        <contact-info>
+        	<email>john@nopurpose.com</email>
+        	<email purpose="personal">john@home.com</email>
+	        <email purpose="work">john@work.com</email>
+	        <email purpose="work">john@work2.com</email>
+	        <email purpose="other">john@spaghetti.com</email>
+	        
+	        <phone-number>123456789</phone-number>
+	        <phone-number purpose="personal">+(123)-456-78-90</phone-number>
+	        <phone-number purpose="work">123-1</phone-number>
+	        <phone-number purpose="work">123-2</phone-number>
+	        <phone-number purpose="other">+420602123456</phone-number>
+	        
+	        <link>http://www.john-nopurpose.com</link>
+	        <link purpose="personal">http://www.john-home.com</link>
+	        <link purpose="work">http://www.john-work.com</link>
+	        <link purpose="work">http://www.john-work2.com</link>
+	        <link purpose="other">http://www.john-spaghetti.com</link>
+	        
+	        <other>
+				<name>Skype2021</name>
+				<id>john.doe-1234</id>
+			</other>
+			
+			<other>
+				<name>Twitter</name>
+				<id>@john&amp;1234</id>
+			</other>
+			
+			<address>
+				<city>London</city>
+				<street>First avenue</street>
+				<house-number>1004/17</house-number>
+				<postcode>17800</postcode>
+			</address>
+			
+			<address>
+				<city>Brno</city>
+				<street>Brněnská avenue</street>
+				<house-number>897</house-number>
+				<postcode>602 00</postcode>
+			</address>			
+		</contact-info>
+		
+		<notes>
+			<note>
+			Sweet roll croissant candy lollipop chupa chups toffee. 
+			Chocolate cake sugar plum ice cream candy sweet sweet marzipan. 
+			Tiramisu chocolate bar dessert carrot cake. Chocolate apple pie jelly gingerbread tootsie roll jujubes. 
+			Halvah croissant pudding macaroon soufflé chocolate bar. Dragée topping soufflé lemon drops cake. 
+			Brownie sweet roll sweet icing brownie muffin caramels carrot cake sesame snaps. Apple pie lollipop jelly tiramisu. 
+			Powder cake sweet roll. Biscuit gummi bears bear claw chocolate candy chocolate bar brownie. 
+			Candy gummies biscuit soufflé soufflé bonbon caramels liquorice sesame snaps. 
+			Gummies bonbon croissant lollipop jelly muffin tootsie roll ice cream. 
+			Topping cheesecake chocolate pie wafer bear claw marzipan. Liquorice sesame snaps cake sugar plum powder carrot cake croissant bear claw.
+			</note>
+			
+			<note>
+			Bacon ipsum dolor amet burgdoggen chuck chicken drumstick ribeye meatloaf chislic corned beef short ribs tri-tip. 
+			Tenderloin porchetta pork belly filet mignon chicken bacon. Ball tip leberkas pork chop, 
+			turkey kevin ham hock ground round bresaola. Hamburger porchetta ham hock pork belly turducken 
+			tri-tip andouille pork burgdoggen leberkas pancetta tail kevin landjaeger.
+			</note>
+		</notes>
+    </contact>
+</contacts>
