@@ -1,0 +1,126 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+
+:root {
+  font-size: 16px;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+#contacts {
+  padding-top: 5px;
+}
+
+.contact {
+  margin-top: 10px;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  border-radius: 15px;
+  background-color: #ffffff;
+  font-family: "Titillium Web", sans-serif;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.014),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.02), 0 12.5px 10px rgba(0, 0, 0, 0.025),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.03), 0 41.8px 33.4px rgba(0, 0, 0, 0.036),
+    0 100px 80px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  /*   overflow: hidden; */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(
+    118deg,
+    rgba(223, 223, 223, 1) 0%,
+    rgba(234, 234, 234, 1) 100%
+  );
+}
+
+.image-placeholder {
+  font-size: 2.5rem;
+}
+
+.contact-image {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.contact-image img {
+  width: auto;
+  height: 100%;
+  margin-left: -10px;
+}
+
+.iamge-placeholder {
+  font-size: 40px;
+}
+
+.horizontal {
+  display: flex;
+  align-items: center;
+}
+
+.phone-numbers,
+.emails,
+.links,
+.others,
+.addresses,
+.notes {
+  display: flex;
+  align-items: flex-start;
+}
+
+.vertical {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.name {
+  margin: 0 8px;
+}
+
+.contact {
+  cursor: pointer;
+}
+
+.contact-info {
+  overflow: hidden;
+  transition: height 0.2s ease-out;
+  height: 0;
+  max-width: 700px;
+  margin-left: 48px;
+  background-color: lightgrey;
+  border-radius: 5px;
+}
+
+.contact-icon {
+  margin: 20px 10px;
+}
+
+.contact-item {
+  margin: 10px;
+}
+
+.purpose,
+.id {
+  text-transform: capitalize;
+  color: #474747;
+  font-size: 0.8rem;
+}
+
+hr {
+  margin: 0;
+}

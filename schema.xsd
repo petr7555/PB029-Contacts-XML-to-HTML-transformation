@@ -1,108 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
     <xs:element name="contacts">
         <xs:complexType>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:element name="contact" type="contact-type"/>
+                <xs:element name="contact" type="contact-type" />
             </xs:choice>
         </xs:complexType>
     </xs:element>
-    
     <xs:complexType name="contact-type">
         <xs:all>
-            <xs:element name="firstname" type="xs:string"/>
-            <xs:element name="lastname" type="xs:string"/>
-            <xs:element name="contact-info" type="contact-info-type"/>   
-			<xs:element name="notes" type="notes-type"/>            
+            <xs:element name="firstname" type="xs:string" />
+            <xs:element name="lastname" type="xs:string" />
+            <xs:element name="image-url" type="link-type" />
+            <xs:element name="contact-details" type="contact-details-type" />
         </xs:all>
     </xs:complexType>
-    
-    <xs:complexType  name="contact-info-type">
-            <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:element name="email" type="email-type"/>
-	            <xs:element name="phone-number" type="phone-number-type"/>
-	            <xs:element name="link" type="link-type"/>
-	            <xs:element name="other" type="other-type"/>
-	            <xs:element name="address" type="address-type"/>
-            </xs:choice>
+    <xs:complexType name="contact-details-type">
+        <xs:all>
+            <xs:element name="emails" type="emails-type" />
+            <xs:element name="phone-numbers" type="phone-numbers-type" />
+            <xs:element name="links" type="links-type" />
+            <xs:element name="others" type="others-type" />
+            <xs:element name="addresses" type="addresses-type" />
+            <xs:element name="notes" type="notes-type" />
+        </xs:all>
     </xs:complexType>
-    
+    <xs:complexType name="emails-type">
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="email" type="email-type" />
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="phone-numbers-type">
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="phone-number" type="phone-number-type" />
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="links-type">
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="link" type="link-type" />
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="others-type">
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="other" type="other-type" />
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="addresses-type">
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="address" type="address-type" />
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="notes-type">
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="note" type="xs:string" />
+        </xs:choice>
+    </xs:complexType>
     <xs:simpleType name="restricted-email-type">
-      <xs:restriction base="xs:string">
-        <xs:pattern value="\S+@\S+\.\S+"/>
-      </xs:restriction>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\S+@\S+\.\S+" />
+        </xs:restriction>
     </xs:simpleType>
-        
     <xs:complexType name="email-type">
         <xs:simpleContent>
-		<xs:extension base="restricted-email-type">
-		  <xs:attribute name="purpose" type="purpose-type"/> 
-		</xs:extension>
+            <xs:extension base="restricted-email-type">
+                <xs:attribute name="purpose" type="purpose-type" />
+            </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
-            
     <xs:simpleType name="restricted-phone-number-type">
-      <xs:restriction base="xs:string">
-        <xs:pattern value="[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*"/>
-      </xs:restriction>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*" />
+        </xs:restriction>
     </xs:simpleType>
-    
     <xs:complexType name="phone-number-type">
         <xs:simpleContent>
-			<xs:extension base="restricted-phone-number-type">
-			  <xs:attribute name="purpose" type="purpose-type"/> 
-			</xs:extension>
+            <xs:extension base="restricted-phone-number-type">
+                <xs:attribute name="purpose" type="purpose-type" />
+            </xs:extension>
         </xs:simpleContent>
-    </xs:complexType>  
-    
+    </xs:complexType>
     <xs:complexType name="link-type">
         <xs:simpleContent>
-		<xs:extension base="xs:string">
-		  <xs:attribute name="purpose" type="purpose-type"/> 
-		</xs:extension>
+            <xs:extension base="xs:string">
+                <xs:attribute name="purpose" type="purpose-type" />
+            </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
-    
     <xs:simpleType name="purpose-type">
-	  <xs:restriction base="xs:string">
-	    <xs:enumeration value="personal" />
-	    <xs:enumeration value="work" />
-	    <xs:enumeration value="other" />
-	  </xs:restriction>
-	</xs:simpleType>
-	
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="personal" />
+            <xs:enumeration value="work" />
+            <xs:enumeration value="other" />
+        </xs:restriction>
+    </xs:simpleType>
     <xs:complexType name="other-type">
         <xs:all>
-            <xs:element name="name" type="name-type"/>
-            <xs:element name="id" type="id-type"/> 
+            <xs:element name="name" type="name-type" />
+            <xs:element name="id" type="id-type" />
         </xs:all>
     </xs:complexType>
-    
     <xs:simpleType name="name-type">
-      <xs:restriction base="xs:string">
-        <xs:pattern value="[a-zA-Z0-9]+"/>
-      </xs:restriction>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z0-9]+" />
+        </xs:restriction>
     </xs:simpleType>
-    
     <xs:simpleType name="id-type">
-      <xs:restriction base="xs:string">
-        <xs:pattern value="[ A-Za-z0-9_@./&amp;#+-]+"/>
-      </xs:restriction>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[ A-Za-z0-9_@./&amp;#+-]+" />
+        </xs:restriction>
     </xs:simpleType>
-
     <xs:complexType name="address-type">
         <xs:all>
-            <xs:element name="city" type="xs:string"/>
-            <xs:element name="street" type="xs:string"/>
-            <xs:element name="house-number" type="xs:string"/>
-            <xs:element name="postcode" type="xs:string"/>            
+            <xs:element name="city" type="xs:string" />
+            <xs:element name="street" type="xs:string" />
+            <xs:element name="house-number" type="xs:string" />
+            <xs:element name="postcode" type="xs:string" />
         </xs:all>
-    </xs:complexType>  
-    
-    <xs:complexType  name="notes-type">
-	    <xs:choice minOccurs="0" maxOccurs="unbounded">
-	        <xs:element name="note" type="xs:string"/>
-	    </xs:choice>
     </xs:complexType>
 </xs:schema>
