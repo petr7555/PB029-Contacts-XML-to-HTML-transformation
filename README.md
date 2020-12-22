@@ -1,4 +1,4 @@
-Second credit document for a PB029 Electronic Document Preparation course at Masaryk University.
+## Second credit document for a PB029 Electronic Document Preparation course at Masaryk University.
 
 Validate and transform to HTML:
 ```bash
