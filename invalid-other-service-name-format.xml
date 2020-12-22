@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="to-html.xsl"?>
+<contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+    <contact>
+        <firstname>John</firstname>
+        <lastname>Doe</lastname>
+		<contact-details>
+            <others>
+                <other>
+                    <name>Skype-2021</name>
+                    <id>john.doe-1234</id>
+                </other>
+            </others>
+        </contact-details>
+    </contact>
+</contacts>

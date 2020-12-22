@@ -83,6 +83,14 @@ body {
   align-items: flex-start;
 }
 
+.no-details-placeholder {
+  margin: 10px;
+}
+
+.no-details-icon {
+  margin-right: 5px;
+}
+
 .vertical {
   display: inline-flex;
   flex-direction: column;

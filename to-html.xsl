@@ -57,7 +57,19 @@
                     </div>
                     <i class="fas fa-caret-down caret-icon" />
                 </div>
-                <xsl:apply-templates select="contact-details"/>
+                <xsl:choose>
+                    <xsl:when test="contact-details">
+                        <xsl:apply-templates select="contact-details"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <div class="contact-details">
+							<div class="no-details-placeholder">
+								<i class="far fa-frown no-details-icon"></i>
+								No details are available.
+							</div>
+				        </div>
+                    </xsl:otherwise>
+                </xsl:choose>
             </div>
         </div>
     </xsl:template>
