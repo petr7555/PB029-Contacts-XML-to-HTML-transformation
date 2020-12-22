@@ -1,16 +1,18 @@
-Kontrola, zda je XML dobře utvořený:
-```bash
-xmllint --noout valid-real-world-records.xml
-```
-
-Kontrola, zda je XML validní podle dané definice jazyka:
-```bash
-xmllint --noout --schema schema.xsd valid-real-world-records.xml
-```
+Second credit document for a PB029 Electronic Document Preparation course at Masaryk University.
 
 Validate and transform to HTML:
 ```bash
 bash validate_all.sh
+```
+
+Check if XML document is well formed:
+```bash
+xmllint --noout valid-real-world-records.xml
+```
+
+Check if XML is valid according to given schema:
+```bash
+xmllint --noout --schema schema.xsd valid-real-world-records.xml
 ```
 
 CSS validated by https://jigsaw.w3.org/css-validator/#validate_by_input.
