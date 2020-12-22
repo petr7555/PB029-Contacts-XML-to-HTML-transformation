@@ -96,7 +96,7 @@ body {
   cursor: pointer;
 }
 
-.contact-info {
+.contact-details {
   overflow: hidden;
   transition: height 0.2s ease-out;
   height: 0;

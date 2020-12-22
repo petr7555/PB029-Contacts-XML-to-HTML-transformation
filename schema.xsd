@@ -11,18 +11,18 @@
         <xs:all>
             <xs:element name="firstname" type="xs:string" />
             <xs:element name="lastname" type="xs:string" />
-            <xs:element name="image-url" type="link-type" />
-            <xs:element name="contact-details" type="contact-details-type" />
+            <xs:element name="image-url" type="url-type" minOccurs="0" />
+            <xs:element name="contact-details" type="contact-details-type" minOccurs="0"/>
         </xs:all>
     </xs:complexType>
     <xs:complexType name="contact-details-type">
         <xs:all>
-            <xs:element name="emails" type="emails-type" />
-            <xs:element name="phone-numbers" type="phone-numbers-type" />
-            <xs:element name="links" type="links-type" />
-            <xs:element name="others" type="others-type" />
-            <xs:element name="addresses" type="addresses-type" />
-            <xs:element name="notes" type="notes-type" />
+            <xs:element name="emails" type="emails-type" minOccurs="0" />
+            <xs:element name="phone-numbers" type="phone-numbers-type" minOccurs="0" />
+            <xs:element name="links" type="links-type" minOccurs="0" />
+            <xs:element name="others" type="others-type" minOccurs="0" />
+            <xs:element name="addresses" type="addresses-type" minOccurs="0" />
+            <xs:element name="notes" type="notes-type" minOccurs="0" />
         </xs:all>
     </xs:complexType>
     <xs:complexType name="emails-type">
@@ -37,7 +37,7 @@
     </xs:complexType>
     <xs:complexType name="links-type">
         <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element name="link" type="link-type" />
+            <xs:element name="link" type="url-type" />
         </xs:choice>
     </xs:complexType>
     <xs:complexType name="others-type">
@@ -79,7 +79,7 @@
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
-    <xs:complexType name="link-type">
+    <xs:complexType name="url-type">
         <xs:simpleContent>
             <xs:extension base="xs:string">
                 <xs:attribute name="purpose" type="purpose-type" />

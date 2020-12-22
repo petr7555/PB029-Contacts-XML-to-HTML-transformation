@@ -1,11 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:noNamespaceSchemaLocation="schema.xsd">
+<contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+    
     <contact>
         <firstname>John</firstname>
         <lastname>Anonymous</lastname>
-        <contact-info>		
-		</contact-info>
-		<notes></notes>
+    </contact>
+    <contact>
+        <firstname>Christopher</firstname>
+        <lastname>Callsalot</lastname>
+        <contact-details>
+            <phone-numbers>
+                <phone-number>123456789</phone-number>
+                <phone-number purpose="personal">+(123)-456-78-90</phone-number>
+                <phone-number purpose="work">123-1</phone-number>
+                <phone-number purpose="other">+420602123456</phone-number>
+            </phone-numbers>
+            <others>
+                <other>
+                    <name>Skype2021</name>
+                    <id>CHRIS</id>
+                </other>
+                <other>
+                    <name>WhatsUp</name>
+                    <id>123456789</id>
+                </other>
+                <other>
+                    <name>Viber</name>
+                    <id>Chris.Callsalot</id>
+                </other>
+            </others>
+            <addresses>
+                <address>
+                    <city>New York</city>
+                    <street>Donut corner</street>
+                    <house-number>8008/00</house-number>
+                    <postcode>10008</postcode>
+                </address>
+                <address>
+                    <city>New Jersey</city>
+                    <street>Lambertville</street>
+                    <house-number>330</house-number>
+                    <postcode>07202</postcode>
+                </address>
+            </addresses>
+            <notes>
+                <note>Sweet roll croissant candy lollipop chupa chups toffee. 
+			Chocolate cake sugar plum ice cream candy sweet sweet marzipan. 
+			Tiramisu chocolate bar dessert carrot cake. Chocolate apple pie jelly gingerbread tootsie roll jujubes. 
+			Halvah croissant pudding macaroon soufflé chocolate bar. Dragée topping soufflé lemon drops cake. 
+			Brownie sweet roll sweet icing brownie muffin caramels carrot cake sesame snaps. Apple pie lollipop jelly tiramisu. 
+			Powder cake sweet roll. Biscuit gummi bears bear claw chocolate candy chocolate bar brownie. 
+			Candy gummies biscuit soufflé soufflé bonbon caramels liquorice sesame snaps. 
+			Gummies bonbon croissant lollipop jelly muffin tootsie roll ice cream. 
+			Topping cheesecake chocolate pie wafer bear claw marzipan. Liquorice sesame snaps cake sugar plum powder carrot cake croissant bear claw.</note>
+            </notes>
+        </contact-details>
+    </contact>
+    <contact>
+        <firstname>Sarah</firstname>
+        <lastname>Snowfield</lastname>
+        <image-url>https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1336&amp;q=80</image-url>
+        <contact-details>
+            <emails>
+                <email purpose="other">sarag@snow.com</email>
+            </emails>
+            <phone-numbers>
+                <phone-number purpose="other">+420602123456</phone-number>
+            </phone-numbers>
+            <links>
+                <link purpose="personal">http://www.sarah.com</link>
+            </links>
+            <others>
+                <other>
+                    <name>Twitter</name>
+                    <id>@sarah_snow</id>
+                </other>
+            </others>
+        </contact-details>
+    </contact>
+    <contact>
+        <firstname>Man</firstname>
+        <lastname>Businessman</lastname>
+        <image-url>https://images.unsplash.com/photo-1573879030843-d4b38a33131d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80</image-url>
+        <contact-details>
+            <emails>
+                <email purpose="work">always@workinghard.com</email>
+            </emails>
+            <phone-numbers>
+                <phone-number purpose="work">+420 445 684 194</phone-number>
+            </phone-numbers>
+            <notes>
+                <note>The man I met at the theater.</note>
+            </notes>
+        </contact-details>
+    </contact>
+    <contact>
+        <firstname>Albert</firstname>
+        <lastname>Snowfield</lastname>
+        <image-url>https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80</image-url>
+        <contact-details>
+            <phone-numbers>
+                <phone-number purpose="personal">+(411)-777-78-90</phone-number>
+            </phone-numbers>
+            <links>
+                <link purpose="work">http://www.albert-snow.io</link>
+            </links>
+            <addresses>
+                <address>
+                    <city>Sydney</city>
+                    <street>Opera street</street>
+                    <house-number>789/17</house-number>
+                    <postcode>2009</postcode>
+                </address>
+            </addresses>
+            <notes>
+                <note>Tenderloin porchetta pork belly filet mignon chicken bacon. Ball tip leberkas pork chop, 
+			turkey kevin ham hock ground round bresaola. Hamburger porchetta ham hock pork belly turducken 
+			tri-tip andouille pork burgdoggen leberkas pancetta tail kevin landjaeger.</note>
+            </notes>
+        </contact-details>
     </contact>
 </contacts>

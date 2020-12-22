@@ -10,18 +10,18 @@ document.querySelectorAll(".contact").forEach((contact) => {
     }
 
     const caret = outerDiv.querySelector(".caret-icon");
-    const contactInfo = outerDiv.querySelector(".contact-info");
+    const contactDetails = outerDiv.querySelector(".contact-details");
 
     if (caret.classList.contains(CARET_HIDDEN)) {
       caret.classList.remove(CARET_HIDDEN);
       caret.classList.add(CARET_EXPANDED);
 
-      expandSection(contactInfo);
+      expandSection(contactDetails);
     } else {
       caret.classList.remove(CARET_EXPANDED);
       caret.classList.add(CARET_HIDDEN);
 
-      collapseSection(contactInfo);
+      collapseSection(contactDetails);
     }
   });
 });
