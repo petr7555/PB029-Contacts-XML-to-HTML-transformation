@@ -1,13 +1,13 @@
 ## Second credit document for a PB029 Electronic Document Preparation course at Masaryk University.
 
 To run on Mac:
-```bash
-brew install tidy-html5
-```
-Prefer `/user/local/bin/` over `/usr/bin/`, by prepending `PATH` in `~/.bash_profile`
-```bash
-PATH="/usr/local/bin:$PATH"
-```
+- ```bash
+  brew install tidy-html5
+  ```
+- Prefer `/user/local/bin/` over `/usr/bin/`, by prepending `PATH` in `~/.bash_profile`
+  ```bash
+  PATH="/usr/local/bin:$PATH"
+  ```
 
 Validate and transform to HTML:
 ```bash
@@ -31,4 +31,3 @@ XML formatted by https://www.freeformatter.com/xml-formatter.html.
 HTML formatted by https://www.freeformatter.com/html-formatter.html.
 
 Escape URL links with https://www.freeformatter.com/html-escape.html.
- 
