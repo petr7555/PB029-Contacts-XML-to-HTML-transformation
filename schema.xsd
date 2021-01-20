@@ -81,7 +81,7 @@
     </xs:complexType>
     <xs:complexType name="url-type">
         <xs:simpleContent>
-            <xs:extension base="xs:string">
+            <xs:extension base="xs:anyURI">
                 <xs:attribute name="purpose" type="purpose-type" />
             </xs:extension>
         </xs:simpleContent>
