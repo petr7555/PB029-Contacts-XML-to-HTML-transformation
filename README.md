@@ -4,7 +4,8 @@ To run on Mac:
 - ```bash
   brew install tidy-html5
   ```
-- Prefer `/user/local/bin/` over `/usr/bin/`, by prepending `PATH` in `~/.bash_profile`
+- Prefer `/user/local/bin/` over `/usr/bin/`, by prepending `PATH` in `~/.bash_profile`.
+
   ```bash
   PATH="/usr/local/bin:$PATH"
   ```
